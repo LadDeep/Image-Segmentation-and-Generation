@@ -1,0 +1,3 @@
+mask_rcnn_coco.h5
+pointrend_resnet50.pkl
+deeplabv3_xception65_ade20k.h5

@@ -1,0 +1,6 @@
+opencv-python
+scikit-image
+pillow
+torch
+pixellib
+tensorflow-gpu
