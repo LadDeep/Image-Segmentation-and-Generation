@@ -52,6 +52,9 @@ def bg_style_transfer(bg_file, img_frame):
     return output
 
 filename = "images.jpeg"
+bg_filename = "pexels-pixabay-268415.jpg"
+
+
 fname, extension = filename.split('.')
 output_fname = fname+" preview."+extension
 
@@ -76,7 +79,7 @@ cv2.imwrite("segmentation and blurring outputs/"+fname+"bg_blurred."+extension, 
 
 
 # '''creating style transfer'''
-output = bg_style_transfer("pexels-pixabay-268415.jpg", numpy.shape(mask))
+output = bg_style_transfer(bg_filename, numpy.shape(mask))
 cv2.imwrite("segmentation and blurring outputs/"+fname+"style_transfer."+extension, output)
 
 # edged_image_x = cv2.Sobel(gaussian_blur(img,5), CV_64F, 1, 0 , 5)
